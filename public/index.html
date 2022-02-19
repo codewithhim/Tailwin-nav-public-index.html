@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/script.css" rel="stylesheet" />
+    <title>Tailwind css</title>
+  </head>
+  <body class="bg-gradient-to-r from-indigo-400 to-purple-200">
+    <!-- header -->
+    <header>
+      <!-- navbarrrr -->
+      <nav class="bg-gradient-to-r from-indigo-500">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex justify-between">
+            <div class="flex space-x-4 items-center">
+              <!-- logo -->
+              <div class=" ">
+                <a href="#" class="flex items-center py-2 px-3">
+                  <svg
+                    class="h-6 w-6 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span class="font-bold">Himanshu</span>
+                </a>
+              </div>
+              <!-- prim nva -->
+              <div class="hidden md:flex items-center space-x-3">
+                <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                  >Blog</a
+                >
+                <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900"
+                  >About</a
+                >
+              </div>
+            </div>
+            <!-- sec nav -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a href="" class="py-5 px-3">Login</a>
+              <a
+                href=""
+                class="py-3 px-3 bg-yellow-400 hover:bg-yellow-300 hover:text-yellow-900 rounded transition duration-300"
+                >Signup</a
+              >
+            </div>
+
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 mr-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+          <a href="" class="block py-2 px-4 text-sm hover:bg-gray-200">Blog</a>
+          <a href="" class="block py-2 px-4 text-sm hover:bg-gray-200">Logo</a>
+        </div>
+        <!-- mobile -->
+      </nav>
+    </header>
+    <div class="text-center">
+      <h2 class="py-64 font-extrabold text-4xl text-zinc-100">
+        Navbars in Tailwind!
+      </h2>
+    </div>
+  </body>
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</html>
